@@ -39,6 +39,7 @@ Bu çalışmada veri tabanı olarak PostgreSQL kullanılmıştır. __SQLDatabase
 <br>
 Şekil 1'de görüldüğü üzere kullanıcıdan alınan input ilk olarak bir sql sorgusu istiyor mu yoksa sadece LLM ile cevap verilebilir mi kontrol edilmektedir. Veri tabanındaki tablo ile ilgili bilgiler içeren ve SQL üzerinden bilgi verilebilecek sorular SQL chain yapısına yönlendirilmektedir. Burada SQL query hazırlaması için oluşturulan prompt ile soruya uygun bir SQL query oluşturulmaktadır. Oluşturulan query veri tabanında çalıştırılarak bir sonuç elde edilmektedir. Burada elde edilen sonuç LLM ile birleştirilerek kullanıcıya açıklayıcı bir biçimde sunulmaktadır. 
 <br>
+<br>
 Eğer SQL ile cevaplanacak bir soru sorulmamış ise bu sefer kod direkt LLM üzerinden cevap vermektedir.
 
 Bu yapının sağlaması için  3 adet prompt ve chain yapısı tanımlanmıştır. Bunlar sırasıyla SQL sorguları üretilmesi için,  SQL sonucunu LLM ile açıklamak için ve soruyu doğrudan LLM ile yanıtlamak içindir. Şekil 1'de bu bahsedilen adımlar detaylı olarak gösterilmektedir.
