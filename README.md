@@ -41,11 +41,14 @@ Bu çalışmada veri tabanı olarak PostgreSQL kullanılmıştır. __SQLDatabase
 <br>
 <br>
 Eğer SQL ile cevaplanacak bir soru sorulmamış ise bu sefer kod direkt LLM üzerinden cevap vermektedir.
-
+<br>
+<br>
 Bu yapının sağlaması için  3 adet prompt ve chain yapısı tanımlanmıştır. Bunlar sırasıyla SQL sorguları üretilmesi için,  SQL sonucunu LLM ile açıklamak için ve soruyu doğrudan LLM ile yanıtlamak içindir. Şekil 1'de bu bahsedilen adımlar detaylı olarak gösterilmektedir.
-
+<br>
+<br>
 Çalışmada chat history tutularak asistan ile daha tutarlı ve kolay iletişim sağlanmıştır.
-
+<br>
+<br>
 Bunlara ek olarak kullanım kolaylığı ve görsellik katmak için streamlit ile bir arayüz tasarlanmıştır. Tasarlanan arayüz çıktıları ve terminal çıktıları örnekleri aşağıda yer almaktadır.
 
 <br>
