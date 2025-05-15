@@ -34,8 +34,8 @@ Bu çalışmada veri tabanı olarak PostgreSQL kullanılmıştır. __SQLDatabase
 <img src="https://github.com/user-attachments/assets/9bfd121d-24cf-4d60-9384-f985261402d7" alt="image">
 </div>
 Şekil 1. Kurulan algoritmanın genel şeması ve akışı
-
-
+<br>
+<br>
 <br>
 Şekil 1'de görüldüğü üzere kullanıcıdan alınan input ilk olarak bir sql sorgusu istiyor mu yoksa sadece LLM ile cevap verilebilir mi kontrol edilmektedir. Veri tabanındaki tablo ile ilgili bilgiler içeren ve SQL üzerinden bilgi verilebilecek sorular SQL chain yapısına yönlendirilmektedir. Burada SQL query hazırlaması için oluşturulan prompt ile soruya uygun bir SQL query oluşturulmaktadır. Oluşturulan query veri tabanında çalıştırılarak bir sonuç elde edilmektedir. Burada elde edilen sonuç LLM ile birleştirilerek kullanıcıya açıklayıcı bir biçimde sunulmaktadır. 
 
